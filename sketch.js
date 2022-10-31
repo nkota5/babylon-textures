@@ -39,25 +39,25 @@ var createScene = function () {
     var s1 = createSphere(-1, 1, -1, 2);
 
     //wrap sphere in material from URL file
-    s1.material = fileMat('https://images.pexels.com/photos/53594/blue-clouds-day-fluffy-53594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', scene);
+    s1.material = fileMat('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/20ce3c6f-5318-4c18-98f0-598d1ebfdbb8/d2eetcd-cd41d545-dfe1-46e5-af76-18b964e314e6.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIwY2UzYzZmLTUzMTgtNGMxOC05OGYwLTU5OGQxZWJmZGJiOFwvZDJlZXRjZC1jZDQxZDU0NS1kZmUxLTQ2ZTUtYWY3Ni0xOGI5NjRlMzE0ZTYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.o0ZLeXCLap-tFzP31uucopNZKsHw1MXm1oE2qfTfIdI', scene);
     
     //create sphere
     var s2 = createSphere(2, 2, 0.5, 2);
 
     //wrap sphere in material from local file
-    s2.material = fileMat('moon.jpg', scene);
+    s2.material = fileMat('life.jpg', scene);
     
     //create box with params x, y, z, width, height, ddepth
     var b1 = createBox(2, -2, 2, 1, 1, 1);
 
     //wrap box in material colored with hex code
-    b1.material = hexMat('#ff0000');
+    b1.material = hexMat('#00ff00');
     b1.rotation.z += Math.PI/4;
 
     var b2 = createBox(0, -2, -1.5, 2, 2, 2);
 
     //wrap box in material from local file
-    b2.material = fileMat('why.png');
+    b2.material = fileMat('eyes.jpeg');
 
     return scene;
 };
